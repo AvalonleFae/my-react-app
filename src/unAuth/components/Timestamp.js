@@ -29,7 +29,7 @@ function Timestamp() {
 
   // Fetch video data from YouTube API
   const fetchVideoData = async (videoId) => {
-    const apiKey = "AIzaSyCMbS-OEEhQaeA8QgrvHJBcn8D5PgQhme0";
+    const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY;
     
     if (!apiKey) {
       setError('YouTube API key is not configured');
