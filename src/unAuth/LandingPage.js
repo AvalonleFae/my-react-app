@@ -10,9 +10,8 @@ function LandingPage() {
     <div className="landing-page">
       <NavBar />
       <div className="landing-content">
-        <h1 className="landing-title">Hello Landing Page</h1>
-        <Bumpups />
         <Timestamp />
+        <Bumpups />
         <Footer />
       </div>
     </div>

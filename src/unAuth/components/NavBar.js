@@ -1,19 +1,23 @@
 import React from 'react';
 import './NavBar.css';
-import logo from '../../assets/tubev1.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPencil, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 function NavBar() {
   return (
     <nav className="nav-bar">
       <div className="nav-container">
         <div className="nav-logo">
-          <img src={logo} alt="tubestamp logo" className="logo-img" />
+          <FontAwesomeIcon icon={faPencil} className="logo-icon" />
+          <span className="logo-text">
+            <span className="logo-tube">tube</span>
+            <span className="logo-stamp">stamp</span>
+          </span>
         </div>
-        <div className="nav-links">
-          <a href="#pricing" className="nav-link">Pricing</a>
-          <a href="#blog" className="nav-link">Blog</a>
-        </div>
-        <button className="nav-button">More Videos</button>
+        <button className="nav-button">
+          AI Video Chatbot
+          <FontAwesomeIcon icon={faArrowRight} className="button-arrow" />
+        </button>
       </div>
     </nav>
   );
