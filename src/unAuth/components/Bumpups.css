@@ -1,0 +1,14 @@
+.bumpups {
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.bumpups p {
+  margin: 0;
+  color: #424242;
+  font-size: 16px;
+}
+
