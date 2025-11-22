@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import LandingPage from './unAuth/LandingPage';
 
 function App() {
   return (
-    <LandingPage />
+    <div className="App">
+      <LandingPage />
+    </div>
   );
 }
 
