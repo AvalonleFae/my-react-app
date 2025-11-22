@@ -3,6 +3,10 @@
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .landing-content {
@@ -10,6 +14,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .landing-title {
@@ -23,5 +30,21 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 768px) {
+  .landing-page {
+    min-height: 100vh;
+  }
+
+  .landing-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-title {
+    font-size: 1.75rem;
+  }
 }
 

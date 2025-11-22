@@ -2,12 +2,14 @@
   width: 100%;
   padding: 60px 20px;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 
 .timestamp-container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .timestamp-title {
@@ -21,6 +23,9 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
 }
 
 .timestamp-description {
@@ -33,6 +38,9 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
 }
 
 .timestamp-link {
@@ -82,6 +90,9 @@
   -moz-osx-font-smoothing: grayscale;
   outline: none;
   transition: border-color 0.2s ease;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .timestamp-input:focus {
@@ -172,13 +183,14 @@
 .timestamp-video-wrapper {
   position: relative;
   width: 100%;
-  max-width: 1280px;
+  max-width: 100%;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
   margin-bottom: 20px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
 }
 
 .timestamp-video-embed {
@@ -191,7 +203,7 @@
 }
 
 .timestamp-video-title {
-  max-width: 1280px;
+  max-width: 100%;
   width: 100%;
   font-size: 1.5rem;
   font-weight: 600;
@@ -205,32 +217,134 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
   .timestamp {
-    padding: 40px 20px;
+    padding: 40px 16px;
+  }
+
+  .timestamp-container {
+    padding: 0;
   }
 
   .timestamp-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .timestamp-description {
+    font-size: 0.9375rem;
+    margin-bottom: 24px;
+    text-align: center;
+    padding: 0 8px;
   }
 
   .timestamp-input-group {
     flex-direction: column;
     align-items: stretch;
+    gap: 12px;
+  }
+
+  .timestamp-input-wrapper {
+    width: 100%;
+  }
+
+  .timestamp-input {
+    padding: 12px 14px 12px 44px;
+    font-size: 16px; /* Prevents zoom on iOS */
+    border-radius: 8px;
+  }
+
+  .timestamp-input-icon {
+    left: 14px;
+    font-size: 16px;
   }
 
   .timestamp-button {
     width: 100%;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  .timestamp-error {
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 0 8px;
   }
 
   .timestamp-video-preview {
     margin-top: 30px;
   }
 
+  .timestamp-video-wrapper {
+    border-radius: 8px;
+    margin-bottom: 16px;
+    max-width: 100%;
+    width: 100%;
+  }
+
   .timestamp-video-title {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
+    padding: 0 8px;
+    line-height: 1.5;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .timestamp-loading {
+    padding: 30px 20px;
+    font-size: 0.9375rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .timestamp {
+    padding: 30px 12px;
+  }
+
+  .timestamp-title {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+
+  .timestamp-description {
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .timestamp-input {
+    padding: 11px 12px 11px 40px;
+    font-size: 16px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  .timestamp-input-icon {
+    left: 12px;
+    font-size: 15px;
+  }
+
+  .timestamp-button {
+    padding: 11px 20px;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+
+  .timestamp-video-title {
+    font-size: 1rem;
+    line-height: 1.4;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }
 

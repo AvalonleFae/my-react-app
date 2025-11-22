@@ -2,6 +2,8 @@
   padding: 15px 20px;
   background-color: #424242;
   width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .nav-container {
@@ -10,6 +12,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .nav-logo {
@@ -60,6 +64,9 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .nav-button:hover {
@@ -70,3 +77,99 @@
   font-size: 14px;
 }
 
+@media (max-width: 768px) {
+  .nav-bar {
+    padding: 12px 16px;
+  }
+
+  .nav-container {
+    gap: 12px;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .nav-logo {
+    flex-shrink: 1;
+    min-width: 0;
+  }
+
+  .logo-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .logo-text {
+    font-size: 18px;
+    white-space: nowrap;
+  }
+
+  .nav-button {
+    padding: 10px 16px;
+    font-size: 14px;
+    white-space: nowrap;
+    min-width: fit-content;
+    flex-shrink: 0;
+  }
+
+  .button-arrow {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-bar {
+    padding: 10px 12px;
+  }
+
+  .nav-container {
+    gap: 8px;
+  }
+
+  .nav-logo {
+    gap: 8px;
+  }
+
+  .logo-icon {
+    font-size: 18px;
+  }
+
+  .logo-text {
+    font-size: 16px;
+  }
+
+  .nav-button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .button-arrow {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav-bar {
+    padding: 10px 10px;
+  }
+
+  .nav-container {
+    gap: 6px;
+  }
+
+  .nav-button {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .logo-text {
+    font-size: 14px;
+  }
+
+  .logo-icon {
+    font-size: 16px;
+  }
+
+  .nav-logo {
+    gap: 6px;
+  }
+}
