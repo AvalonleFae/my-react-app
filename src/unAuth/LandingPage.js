@@ -13,8 +13,8 @@ function LandingPage() {
         <h1 className="landing-title">Hello Landing Page</h1>
         <Bumpups />
         <Timestamp />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }

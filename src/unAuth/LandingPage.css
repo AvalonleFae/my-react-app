@@ -1,17 +1,16 @@
 .landing-page {
   min-height: 100vh;
-  background-color: #e3f2fd;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
 }
 
 .landing-content {
   flex: 1;
-  padding: 40px 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 20px;
   width: 100%;
   max-width: 600px;
