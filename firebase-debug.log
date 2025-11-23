@@ -1,0 +1,14 @@
+[debug] [2025-11-23T17:01:11.834Z] ----------------------------------------------------------------------
+[debug] [2025-11-23T17:01:11.837Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ava\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2025-11-23T17:01:11.838Z] CLI Version:   14.26.0
+[debug] [2025-11-23T17:01:11.838Z] Platform:      win32
+[debug] [2025-11-23T17:01:11.838Z] Node Version:  v24.11.1
+[debug] [2025-11-23T17:01:11.838Z] Time:          Mon Nov 24 2025 01:01:11 GMT+0800 (Malaysia Time)
+[debug] [2025-11-23T17:01:11.838Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-11-23T17:01:12.088Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-23T17:01:12.088Z] > authorizing via signed-in user (ashrafwajde@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting, extensions"}}
+[debug] [2025-11-23T17:01:12.093Z] Checked if tokens are valid: true, expires at: 1763919356196
+[debug] [2025-11-23T17:01:12.093Z] Checked if tokens are valid: true, expires at: 1763919356196
+[debug] [2025-11-23T17:01:12.094Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/my-react-app-ade4b [none]
